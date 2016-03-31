@@ -5,7 +5,7 @@ var express = require("express")
 ,jwt = require("jsonwebtoken")
 ,mongoose = require("mongoose")
 ,app = express()
-,port = process.env.PORT || 3000
+,port = process.env.PORT || 3001
 ,Usuario = require('./modelos/Usuario');
 
 // Conecta no BD
