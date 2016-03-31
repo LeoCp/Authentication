@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 
   });
 
+
   //Onde fica os passos a serem execultados
   grunt.registerTask('default', []);
 
