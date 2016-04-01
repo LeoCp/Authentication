@@ -6,6 +6,8 @@ var express = require("express")
 
 app.use(morgan("dev"));
 app.use(express.static("./public"));
+app.use('/static',  express.static(__dirname + '/public'));
+app.use('/lib',  express.static(__dirname + '/node_modules'));
 
 app.get("/", function(req, res) {
     res.sendFile("./public/index.html");

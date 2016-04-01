@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <title>Authentication</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <h1>Teste</h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <span class="icon-bar">
+              </span> <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/">Authentication</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#/login">Login</a></li>
+          <li><a href="#/cadastro">Cadastar</a></li>
+       </ul>
+
+      </div>
+    </nav>
+
+    <div class="container" ng-view=""> </div>
+
+     <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+     <script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
+     <script type="text/javascript" src="/static/js/app.js"></script>
+     <script type="text/javascript" src="/static/js/controllers.js"></script>
+     <script type="text/javascript" src="/static/js/services.js"></script>
+
   </body>
 </html>
